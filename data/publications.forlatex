@@ -1,0 +1,128 @@
+Mojtabe Eslami and Keivan Hassani Monfared
+Properties of a nonnegative reciprocal matrix and\\ their application to AHP
+In Progress
+2018+
+
+
+
+
+We study the properties of a nonnegative reciprocal matrices associated with graphs and their application to {AHP}.
+Omid Atabati, Mojtaba Eslami, and Keivan Hassani Monfared
+Dissonance networks and social influence
+In Progress
+2018+
+
+
+
+
+We model how a society manages conflicts between beliefs and social standings by forming a dissonance network, and then providing measures of centrality and modularity for such signed networks.
+Keivan Hassani Monfared, Kris Vasudevan, Jordan. S. Farrell, and G. Cam Teskey
+Community structure detection and evaluation during preictal and\\ postictal hippocampal depth recordings
+Under Review
+2018+
+
+
+
+https://arxiv.org/pdf/1804.01568.pdf
+We show how anti-correlation between neurons’ firing rates forms communities of neurons that influence the behaviour during an eppleptic seizure.
+Keivan Hassani Monfared and Peter Lancaster
+Inverse spectral problems for linked vibrating \\systems and structured matrix polynomials
+Under review
+2018+
+
+
+
+https://arxiv.org/pdf/1710.11203.pdf
+We show that for a given set of $nk$ distinct real numbers $\Lambda$, and $k$ graphs on $n$ nodes, $G_0, G_1,\cdots,G_{k-1}$, there are real symmetric $n\times n$ matrices $A_s$, $s=0,1,\ldots, k$ such that the matrix polynomial $A(z) := A_k z^k + \cdots + A_1 z + A_0$ has proper values $\Lambda$, the graph of $A_s$ is $G_s$ for $s=0,1,\ldots,k-1$, and $A_k$ is an arbitrary nonsingular (positive definite) diagonal matrix. When $k=2$, this solves a physically significant inverse eigenvalue problem for linked vibrating systems.
+Keivan Hassani Monfared and Sudipta Mallik
+An analog of Matrix Tree Theorem for signless Laplacians
+Linear Algebra and Its Applications
+	2018
+560
+43--55
+10.1016/j.laa.2018.09.016
+https://www.sciencedirect.com/science/article/pii/S0024379518304518?via%3Dihub
+A spanning tree of a graph is a connected subgraph on all vertices with the minimum number of edges. The number of spanning trees in a graph $G$ is given by Matrix Tree Theorem in terms of principal minors of Laplacian matrix of $G$. We show a similar combinatorial interpretation for principal minors of signless Laplacian $Q$. We also prove that the number of odd cycles in $G$ is less than or equal to $\frac{\det(Q)}{4}$, where the equality holds if and only if $G$ is a bipartite graph or an odd-unicyclic graph.
+Keivan Hassani Monfared and Ehssan Khanmohammadi
+A structured inverse spectrum problem for infinite graphs
+Linear Algebra and Its Applications
+2018
+539
+28--43
+10.1016/j.laa.2017.10.025
+http://www.sciencedirect.com/science/article/pii/S0024379517306146
+In this paper it is shown that for a given infinite graph $G$ on countably many vertices, and a compact, infinite set of real numbers $\Lambda$ there is a real symmetric matrix $A$ whose graph is $G$ and its spectrum is $\Lambda$. Moreover, the set of limit points of $\Lambda$ equals the essential spectrum of $A$, and the isolated points of $\Lambda$ are eigenvalues of $A$ with multiplicity one. It is also shown that any two such matrices constructed by our method are approximately unitarily equivalent.
+Keivan Hassani Monfared
+Existence of a not necessarily symmetric matrix \\with given distinct eigenvalues and graph
+Linear Algebra and Its Applications
+2017
+527
+1--11
+10.1016/j.laa.2017.04.006
+http://www.sciencedirect.com/science/article/pii/S002437951730229X
+For given distinct numbers $\lambda_1 \pm \mu_1 \i, \lambda_2 \pm \mu_2 \i, \ldots, \lambda_k \pm \mu_k \i \in \mathbb{C} \setminus \mathbb{R}$ and $\gamma_1, \gamma_2, \ldots, \gamma_l \in \mathbb{R}$, and a given graph $G$ with a matching of size at least $k$, we will show that there is a real matrix whose eigenvalues are the given numbers and its graph is $G$. In particular, this implies that any real matrix with distinct eigenvalues is similar to a real, irreducible, tridiagonal matrix.
+Keivan Hassani Monfared and Bryan L. Shader
+The nowhere-zero eigenbasis problem for a graph
+Linear Algebra and Its Applications
+2016
+505
+296--312 
+10.1016/j.laa.2016.04.028
+http://www.sciencedirect.com/science/article/pii/S0024379516301276
+Using previous results and methods, it is shown that for any connected graph $G$ on $n$ vertices and a set of $n$ distinct real numbers $\Lambda$, there is an $n\times n$ real symmetric matrix $A$ whose graph is $G$, its spectrum is $\Lambda$, and none of the eigenvectors of $A$ have a zero entry.
+Keivan Hassani Monfared, Paul Horn, Franklin H. J. Kenter, \\Kathleen Nowak, John Sinkovic, and Josh Tobin
+On the principal permanent rank characteristic \\sequences of graphs and digraphs
+Electronic Journal of Linear Algebra
+2016
+31
+187--199
+10.13001/1081-3810.3117
+http://repository.uwyo.edu/ela/vol31/iss1/16/
+Given an $n\times n$ real matrix $A$, the principal characteristic perrank sequence of $A$ is defined as $r_0, r_1, r_2, \ldots, r_n$, where for $k \geq 1$, $r_k=1$ iff $A$ has a principal submatrix of size $k$ with nonzero permanent, and $r_0 = 1$ iff $A$ has a zero on its main diagonal. We study the following inverse problem: given a sequence $r_0 r_1 \cdots r_n$ of zeros and ones, does there exist an $n \times n$ real matrix which achieves this sequence? As a result, we characterize all the sequences corresponding to (symmetric) entry-wise nonnegative matrices, and provide some results for the skew-symmetric case.
+Keivan Hassani Monfared and Sudipta Mallik
+Spectral characterization of matchings in graphs
+Linear Algebra and Its Applications
+2016
+496
+407--419
+10.1016/j.laa.2016.02.004
+http://www.sciencedirect.com/science/article/pii/S0024379516000951
+A spectral characterization of the matching number (the size of a maximum matching) of a graph is given. More precisely, it is shown that the graphs $G$ of order $n$ whose matching number is $k$ are precisely those graphs with the maximum skew rank $2k$ such that for any given set of $k$ distinct nonzero purely imaginary numbers there is a real skew-symmetric matrix $A$ with graph $G$ whose spectrum consists of the given $k$ numbers, their conjugate pairs and $n-2k$ zeros.
+Keivan Hassani Monfared and Bryan L. Shader
+The $\lambda$-$\tau$ structured inverse eigenvalue problem
+Linear and Multilinear Algebra
+2015
+63
+2275--2300
+10.1080/03081087.2014.1003527
+http://www.tandfonline.com/doi/full/10.1080/03081087.2014.1003527
+For a matrix $A$ let $A(\{r,s\})$ denote the principal submatrix obtained form $A$ by removing rows and columns $r$ and $s$. Let $T$ be a tree on $n$ vertices which satisfies some necessary combinatorial restriction, $\Lambda$ a set of $n$ distinct real numbers, $M$ a set of $n-2$ distinct real numbers, and $r$ and $s$ two distinct fixed vertices of $T$. Also, assume that $M$ and $L$ satisfy second degree strict Cauchy interlacing inequalities and some genericity conditions. Using various combinatorial techniques it is shown that there is a real symmetric matrix $A$ whose graph is $T$, spectrum of $A$ is $\Lambda$ and spectrum of $A(\{r,s\})$ is $M$. Then, using Jacobian method this result was extended to any supergraph of this family of trees. Also, some consequences of these results related to perturbations of diagonal entries of a matrix are presented.
+Keivan Hassani Monfared and Sudipta Mallik
+Construction of real skew-symmetric matrices \\from interlaced spectral data, and graph
+Linear Algebra and Its Applications
+2015
+471
+241--263
+10.1016/j.laa.2015.01.001
+http://www.sciencedirect.com/science/article/pii/S0024379515000269
+We provide analogues of the results presented in the $2013$ paper for skew-symmetric matrices. This is first shown for a family of trees with nearly even branching at a vertex $v$ (NEB trees) using various combinatorial techniques. Then the results are extended to any supergraph of such trees using the Jacobian method. Let $G$ be a connected graph on $n$ vertices, $\Lambda$ a set of $n$ distinct purely imaginary numbers which is closed under negation, and $M$ a set of $n-1$ distinct purely imaginary numbers closed under negation which strictly interlaces $\Lambda$. Also, let $v$ be a vertex of $G$. It is shown that if $G$ has a spanning tree which is NEB at $v$, then there is a real skew-symmetric matrix $A$ whose graph is $G$, its spectrum is $\Lambda$, and the spectrum of $A(v)$ is $M$. Some properties of NEB trees are also studied.
+Keivan Hassani Monfared and Bryan L. Shader
+Construction of matrices with a given graph and \\prescribed interlaced spectral data
+Linear Algebra and Its Applications
+2013
+438
+4348--4358
+10.1016/j.laa.2013.01.036
+http://www.sciencedirect.com/science/article/pii/S0024379513001006
+For a matrix $A$ let $A(v)$ denote the principal submatrix obtained form $A$ by removing its $v$-th row and column. In a 1989 paper, Duarte showed that for any given tree $T$ on $n$ vertices, $\Lambda$ a set of $n$ distinct real numbers, $M$ a set of $n-1$ distinct real numbers that strictly interlaces $\Lambda$, and $i$ a fixed vertex of $T$, there is a real symmetric matrix $A$ whose graph is $T$, spectrum of $A$ is $\Lambda$ and spectrum of $A(v)$ is $M$. In this paper we develop a method, called the Jacobian method, and show that Duarte's result holds for any connected graph.
+Saeed Akbari, Keivan Hassani Monfared, Mohammad Jamaali, Ehssan \\Khanmohammadi, and Dariush Kiani
+On the existence of nowhere-zero vectors for linear transformations
+Bulletin of the Australian Mathematical Society
+2010
+82
+480--487
+10.1017/S0004972710001619
+http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=7925287&fulltextType=RA&fileId=S0004972710001619
+If for a matrix $A$ there is a vector $x$ such that the vectors $x$ and $Ax$ have no zero entries, then $A$ is called to have the AJT property. In this paper we make further progress on the Alon-Jaeger-Tarsi (AJT) Conjecture, using combinatorial, probabilistic, and linear algebraic methods. The AJT conjecture asserts any nonsingular matrix over a field with at least 4 elements has the AJT property. It is shown that any nonzero matrix is similar to an AJT matrix, and some necessary and some sufficient conditions for a matrix to have the AJT property are given. Also, we provide a sharp bound for the number of the elements of the field in terms of the size of the matrix.
+
+ 

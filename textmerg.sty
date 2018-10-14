@@ -1,0 +1,187 @@
+
+%% This is TEXTMERG.STY
+%% Copyright (C) 1992 by Mike Piff.
+%% All rights reserved.
+%% Copying of this file is authorized only if
+%% you make absolutely no changes to your copy.
+%%
+%% Dr M. J. Piff
+%% University of Sheffield
+%% Department of Pure Mathematics
+%% Hicks Building
+%% Hounsfield Road
+%% SHEFFIELD S3 7RH
+%% England
+%% Janet: m.piff@sheffield.ac.uk
+
+%% Usage
+%% \documentstyle[textmerg]{article} %% in LaTeX
+%% \input textmerg.sty               %% in non-LaTeX versions of TeX
+
+\immediate\write0{Text Merge style option to LaTeX/plain TeX,
+   Mike Piff, 07/31/92 01:57pm}
+\def\glet{\global\let}
+\newread\MergeFile
+\def\InputFile#1{%
+   \openin\MergeFile=#1
+   \ifeof\MergeFile
+   \errmessage{Empty merge file}%
+   \closein\MergeFile
+   \long\def\MakeTemplate##1{%
+      \def\Template{}}%
+   \else\GetInput\fi}
+\def\GetInput{{\endlinechar=-1
+   \global\read\MergeFile to\InputBuffer}}
+\def\SeeIfEof{%
+   \let\NextLook\relax
+   \ifeof\MergeFile
+   \else
+      \ifx\InputBuffer\empty
+         \LookAgain
+      \fi
+   \fi
+   \NextLook}
+\def\LookAgain{\GetInput
+   \let\NextLook\SeeIfEof}
+\newif\ifNonBlank \NonBlankfalse
+\def\AllowBlank{\global\NonBlankfalse}
+\def\DontAllowBlank{\global\NonBlanktrue}
+\def\ReadIn#1{%
+   \ifNonBlank\SeeIfEof\fi
+   \ifeof\MergeFile
+      \gdef#1{??}\MissingField
+   \else
+      \glet#1\InputBuffer
+      \GetInput
+   \fi}
+\def\MissingField{%
+   \message{Missing field in file}}
+\newtoks\GlobalFields
+\def\Fields#1{\GlobalFields{#1}}
+\def\ParseFields#1{%
+   \ifx#1\EndParseFields
+      \let\NextParse\relax
+   \else
+      \let\NextParse\ParseFields
+      \ifx#1+\DontAllowBlank
+      \else
+         \ifx#1-\AllowBlank
+         \else\ReadIn#1
+         \fi
+      \fi
+   \fi\NextParse}
+\let\EndParseFields\ParseFields
+\def\ReadFields#1{\expandafter\ParseFields
+   \the#1\EndParseFields
+   \AllowBlank}
+\long\def\Merge#1#2{\begingroup%
+   \InputFile{#1}%
+   \def\Fields##1{%
+      \ParseFields##1\EndParseFields}%
+   \MakeTemplate{#2}\Iterate}
+\long\def\MakeTemplate#1{\def\Template{#1}}
+\countdef\Iteratecounter=9
+\Iteratecounter=0
+\def\Iterate{%
+   \global\advance\Iteratecounter by1
+   \ReadFields\GlobalFields
+   \Template
+   \SeeIfEof
+   \ifeof\MergeFile
+      \def\NextIteration{%
+         \endgroup\closein\MergeFile}%
+   \else
+      \let\NextIteration\Iterate
+   \fi
+   \NextIteration}
+\newcount\MultiCount \newcount\MaxCount
+\newif\ifStartOfList
+\def\MultiRead#1{%
+   \ifnum#1>0
+      \SelectCR
+      \MakeEmpty{#1}%
+      \global\StartOfListtrue
+      \glet\NextRead\MRead
+      \AllowBlank
+      \global\MaxCount=#1
+      \NextRead
+   \fi}
+\newcount\Emptyctr
+\def\MakeEmpty#1{\Emptyctr=0
+   \loop
+      \advance\Emptyctr by1
+      \expandafter\ifx\csname
+         pr\the\Emptyctr\endcsname\relax
+         \expandafter\glet\csname
+            pr\the\Emptyctr\endcsname\empty
+      \fi
+      \ifnum\Emptyctr<#1
+   \repeat}
+\def\Process#1#2{%
+   \expandafter\def\csname
+      pr#1\endcsname##1{#2{##1}}}
+\def\MarkEnd#1{\gdef\EndMarker{#1}}
+\MarkEnd{}
+\newtoks\NextLine \newtoks\NextField
+\def\AppendNextField{%
+   \global\advance\MultiCount1
+   \NextField=\expandafter{\TempField}%
+   \edef\Append{\NextLine=
+      {\the\NextLine&\csname
+         pr\the\MultiCount\endcsname
+         {\the\NextField}}}%
+   \Append}%%\showthe\NextLine}
+\def\SelectCR{%
+   \ifx\array\undefined
+      \gdef\EndLine{\cr}%
+   \else
+      \glet\EndLine\\%
+   \fi}
+\def\FinishLine{%
+   \ifStartOfList
+      \global\StartOfListfalse
+   \else\EndLine\fi}
+\def\StopProcessing{%
+   \global\MultiCount\MaxCount
+   \glet\NextRead\AllowBlank}
+\def\MRead{%
+   \global\MultiCount=1
+   \ReadIn\TempField
+   \ifx\TempField\EndMarker
+      \StopProcessing
+   \else
+      \FinishLine
+      \NextField=\expandafter{\TempField}%
+      \edef\StartLine{\NextLine={\csname
+         pr1\endcsname{\the\NextField}}}%
+      \StartLine
+      \ConstructNextRow
+   \fi
+   \NextRead}
+\def\ConstructNextRow{%
+   \loop
+      \ReadIn\TempField
+      \ifx\TempField\EndMarker
+         \glet\TempField\empty
+         \StopProcessing
+         \MissingField
+      \else
+         \ifeof\MergeFile
+            \glet\TempField\empty
+            \StopProcessing
+            \MissingField
+         \fi
+      \fi
+      \AppendNextField
+      \ifnum\MultiCount<\MaxCount
+   \repeat
+   \the\NextLine}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Dr M J Piff                      %%  e-mail:
+%% Department of Pure Mathematics   %%
+%% University of Sheffield          %%  M.Piff@sheffield.ac.uk
+%% Hicks Building                   %%
+%% Hounsfield Road                  %%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SHEFFIELD S3 7RH                 %%  Telephone: SHEFFIELD (0742) 768555
+%% England                          %%             Ext. 4431
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

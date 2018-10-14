@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Sectioned Curriculum Vitae
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{res} % Use the res.cls style
+
+\usepackage{xcolor}
+\definecolor{dark-red}{rgb}{0.4,0.15,0.15}
+\definecolor{dark-blue}{rgb}{0.15,0.15,0.4}
+\definecolor{medium-blue}{rgb}{0,0,0.5}
+
+\usepackage{graphicx}
+
+\usepackage[bottom=1cm]{geometry}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks, linkcolor={dark-red},
+    citecolor={dark-blue}, urlcolor={medium-blue}
+}
+
+\usepackage{amsmath,amssymb}
+
+\usepackage{textmerg} %reads a text files and embeds it in
+\usepackage[none]{hyphenat} %no hyphenation
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\newsectionwidth{0pt} % Stops section indenting
+\linespread{.95} % space between lines
+\begin{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND ADDRESS(ES) SECTION
+%----------------------------------------------------------------------------------------
+
+\name{\sc \Large Keivan Hassani Monfared - Publications \\} % Your name at the top
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{.5cm}
+
+\Fields{\Authors\Title\Journal\Year\Vol\Pages\DOI\Link\Summary}
+
+\Merge{data/publications.forlatex}{%
+
+\begin{description}
+	\item \begin{minipage}[t]{.9\textwidth}
+	\href{\Link}{\textbf{\Title}} \\
+	\Authors \\
+	\textit{\Journal} \Vol~\Pages
+	\end{minipage}  \hfill \Year\\
+	
+	\Summary \vspace{.5cm}
+	
+\end{description}
+}
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{resume}
+\end{document}

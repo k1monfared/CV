@@ -1,0 +1,18 @@
+## run as "sh doit INUT_FILE.CSV"
+## This takes a csv file, reads from the last line and breaks each line into as many columns as there are intotal
+
+#!/bin/bash
+
+FILE=$*
+
+tac $FILE > temp1 # Reads from last line
+
+gawk 'BEGIN { RS=";"; ORS="\n" } { print }' temp1 > temp2 #breaks each line into ncols lines
+
+gawk 'BEGIN { RS="%20"; ORS=" " } { print }' temp2 > temp3 #replaces %20's with spaces, for the links
+
+OUTPUT="${FILE%%.*}" #removes the file extension 
+
+cat temp3 > "$OUTPUT.forlatex" #changes the file extension to .forlatex
+
+rm temp1 && rm temp2 && rm temp3 #remove temporary files

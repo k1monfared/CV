@@ -1,0 +1,605 @@
+\documentclass[margin,line,pifont,palatino,courier]{res}
+
+\usepackage{pifont}
+\usepackage[latin1] { inputenc}
+
+\topmargin -20pt
+\oddsidemargin -20pt
+\evensidemargin -20pt
+\textwidth=5.5in
+\textheight=9.5in
+%\itemsep=0in
+%\parsep=0in
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+%\cfoot{\thepage}
+%\lfoot{\textit{\footnotesize Research Statement}}
+%\rfoot{{\footnotesize Curriculum Vitae, John Doe, \thepage}}
+
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\usepackage{xcolor}
+\definecolor{dark-red}{rgb}{0.4,0.15,0.15}
+\definecolor{dark-blue}{rgb}{0.15,0.15,0.4}
+\definecolor{medium-blue}{rgb}{0,0,0.5}
+
+\usepackage{graphicx}
+
+%\usepackage[bottom=2cm,top=2cm,left=2cm,right=0cm]{geometry}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[hidelinks,colorlinks]{hyperref}
+\hypersetup{
+    colorlinks, linkcolor={dark-red},
+    citecolor={dark-blue}, urlcolor={medium-blue}
+}
+
+\usepackage{textmerg} %reads a text files and embeds it in
+\usepackage[none]{hyphenat} %no hyphenation
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+
+%
+%\usepackage{fixfoot} % To use repeated footnotes 
+%\DeclareFixedFootnote{\TFall}{}
+%\DeclareFixedFootnote{\TFta}{}
+%\DeclareFixedFootnote{\TFlab}{}
+%
+
+%\newsectionwidth{0pt} % Stops section indenting
+\linespread{.95} % space between lines
+
+\begin{document}
+
+\name{\Large \sc{Keivan Hassani Monfared -- CV} \vspace*{.1in}}
+
+\begin{resume}
+
+\section{\sc Contact Information}
+
+\vspace{.05in}
+\begin{minipage}[t]{.6\textwidth}
+\noindent \textbf{Website:} \href{http://k1monfared.github.io}{\texttt{k1monfared.github.io}}\\ 
+\textbf{Linkedin:} \href{http://www.linkedin.com/in/k1monfared}{\texttt{linkedin.com/in/k1monfared}}\\
+\textbf{GitHub:} \href{http://github.com/k1monfared}{\texttt{github.com/k1monfared}}\\
+\textbf{Email:} \href{mailto:k1monfared@gmail.com}{\texttt{k1monfared@gmail.com}}\\
+\textbf{Phone:} +1-587-832-1785
+\end{minipage} \begin{minipage}[t]{.55\textwidth}
+\textbf{Mailing address:}\\ 
+Department of Mathematics \\and Statistics\\
+University of Calgary\\
+2500 University Drive NW\\
+Calgary AB T2N 1N4 Canada 
+\end{minipage}
+
+\vspace*{-5pt}
+\section{\sc Status in\\ Canada} Permanent Resident
+
+
+\section{\sc Research Interests}
+Linear Algebra: Combinatorial Matrix Theory\\
+Discrete Mathematics: Algebraic Graph Theory\\
+and their Applications in Neuroscience and Economics
+
+\vspace*{-5pt}
+
+\section{\sc{Education}} 
+%----------------------------------------------------------------------------------------
+
+\Fields{\Degree\Major\Date\School\Address\Advisor\Thesis\Link}
+
+\Merge{data/education.forlatex}{%
+
+\begin{description}
+	\item {\textbf{\Degree}}, \Major \hfill \Date \\ 
+		\School, \Address \\
+		Thesis: \href{\Link}{\textit{\Thesis}}\\
+		Advisor: \Advisor
+\end{description}
+}
+
+\section{\sc{Professional Experience}} 
+%----------------------------------------------------------------------------------------
+\begin{description}
+	\item \textbf{PIMS Postdoctoral Fellow and Sessional Instructor}  \hfill {2017--Present} \\
+		{\sl University of Calgary, Calgary, AB, Canada}
+	
+	\item \textbf{Postdoctoral Fellow and Sessional Instructor}   \hfill {2015--2017} \\
+		{\sl University of Calgary, Calgary, AB, Canada}
+
+	\item \textbf{Visiting Assistant Professor} \hfill {2014--2015}\\
+		{\sl Western Illinois University, Macomb, IL, USA}
+		
+	\item \textbf{Graduate Teaching and Research Assistant} \hfill {2009--2014} \\
+		\phantom{--} {\sl University of Wyoming, Laramie, WY, USA}
+		
+	\item \textbf{Undergraduate Research Assistant}\hfill {2008--2009} \\
+		{\sl Institute for Research in Fundamental Sciences (IPM), Tehran, Iran} 
+\end{description}
+%----------------------------------------------------------------------------------------
+ 
+\section{\sc{Teaching Experience}} 
+%----------------------------------------------------------------------------------------
+\begin{description}
+	\item \textbf{Teaching Certificates}\\
+		$\bullet$ Instructional Skills Workshop Certificate \hfill August 2016 \\
+		\phantom{----} {\sl \small{Taylor Institute for Teaching and Learning, University of Calgary}}\\
+		$\bullet$ Course Design Certificate \hfill October 2017 \\
+		\phantom{----} {\sl \small{Taylor Institute for Teaching and Learning, University of Calgary}}
+
+	\item \textbf{Graduate Courses}\\
+		$\bullet$ (\textbf{Online Course}) Discrete Mathematics\footnote{Designing the course theme, producing presentations for lectures, writing and delivering lectures, devising study guides, creating and maintaining a class web site, managing instructional resources. Writing and grading exams and assignments, holding regular office hours, mentoring and advising students.}\textsuperscript{,}\footnote{Handling all administrative aspects of the course.}\textsuperscript{,$4$} \hfill Summer 2012\\
+		\phantom{----}\textit{for high school teachers}
+
+
+	\item \textbf{Undergraduate Courses}\\
+	$\bullet$ Linear Algebra\textsuperscript{$1$--}\footnote{Creating the syllabus} \hfill 2011, 2014, 2016, 2017, 2018\\
+	$\bullet$ Calculus I\textsuperscript{$1$--$3$} \hfill 2012, 2015, 2016, 2017\\
+	$\bullet$ Discrete Mathematics\textsuperscript{$1$,}\footnote{Mentoring teaching assistants. Leading a discussion session.} \hfill 2017\\
+	$\bullet$ General Statistics\textsuperscript{$1,2$} \hfill  2015  2014\\
+	$\bullet$ Concepts of Mathematics\textsuperscript{$1,2$} \hfill 2014	\\
+	$\bullet$ Geometry and Measurement\textsuperscript{$1,2,4$} \hfill 2014\\
+	\phantom{----}	\textit{for elementary school teachers}\\
+	$\bullet$ Calculus III\textsuperscript{$1$--$3$}\hfill 2013 \\
+	$\bullet$ Algebra and Trigonometry \textsuperscript{$1,2$}\hfill 2011, 2013\\
+	$\bullet$ Calculus II\textsuperscript{$1,2$}\hfill 2012\\
+	$\bullet$ Finite Mathematics\textsuperscript{$1,2$}\hfill 2010, 2011\\
+	$\bullet$ Trigonometry\textsuperscript{$1,2$}\hfill 2009, 2010\\
+	$\bullet$ College Algebra\textsuperscript{$1,2$}\hfill 2010\\
+\end{description}
+ 
+\vspace{-15pt}
+ 
+ 
+\section{\sc{Publications}} 
+
+\Fields{\Authors\Title\Journal\Year\Vol\Pages\DOI\Link\Summary}
+
+\Merge{data/publications.forlatex}{%
+
+\begin{description}
+	\item %\begin{minipage}[t]{.9\textwidth}
+	\href{\Link}{\textbf{\Title}} \hfill \Year \\
+	\Authors \\ 
+	\textit{\Journal}. \Vol~\Pages
+	%\end{minipage} 
+\end{description}
+}
+ 
+
+
+
+\section{\sc{Honours and Awards}} 
+\begin{description}
+
+\item \textbf{Distinguished Awards}
+\Fields{\Who\What\ForWhat\Where\When}
+
+\Merge{data/honors.forlatex}{%
+
+
+	\small{\textbf{\What} \Who   \hfill \When \\}
+	\phantom{----} {\sl \small{\ForWhat, \Where}}
+
+}
+
+\vspace{10pt}
+
+\item \textbf{Travel Scholarships}
+\Fields{\Who\What\ForWhat\Where\When}
+
+\Merge{data/travelawards.forlatex}{%
+
+	\small{\textbf{\Who}   \hfill \When \\}
+	\phantom{----} {\sl \small{\ForWhat, \Where}}
+
+}
+
+\end{description}
+%------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+\section{\sc{Seminars and Talks}} 
+%----------------------------------------------------------------------------------------
+\begin{description}
+
+\item \textbf{Invited Talks}
+
+\Fields{\Title\Date\Where\Address\Abslink\Conflink}
+
+\Merge{data/invitedtalks.forlatex}{%
+
+
+	\small{ \href{\Abslink}{\textbf{\Title}} \hfill \Date\\ 
+	\phantom{----} \sl{{\footnotesize \href{\Conflink}{\Where}, \Address}}}
+
+}
+%----------------------------------------------------------------------------------------
+\vspace{10pt}
+\item \textbf{Contributed Talks}
+
+\Fields{\Title\Date\Where\Address\Abslink\Conflink}
+
+\Merge{data/contributedtalks.forlatex}{%
+
+	\small{\href{\Abslink}{\textbf{\Title}} \hfill \Date\\ 
+	\sl{\phantom{----} {\footnotesize \href{\Conflink}{\Where}, \Address}}}
+}
+
+\vspace{10pt}
+%----------------------------------------------------------------------------------------
+\item \textbf{Poster Presentations}
+
+\Fields{\Title\Date\Where\Address\Abslink\Conflink}
+
+\Merge{data/posters.forlatex}{%
+
+	\small{\href{\Abslink}{\textbf{\Title}} \hfill \Date\\ 
+	\phantom{----} \sl{{\small \href{\Conflink}{\Where}, \Address}}}
+}
+ 
+\end{description}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\section{\sc{Professional Affiliations}} 
+
+\Fields{\Where\Short\From\To}
+
+\Merge{data/memberships.forlatex}{%
+
+\begin{description}
+	\item \Where \, (\Short) \hfill \From --\To
+\end{description}
+}
+ 
+ 
+ 
+\section{\sc{Service}} 
+%----------------------------------------------------------------------------------------
+\begin{description}
+\item \textbf{Invited Reviewer} \\
+	{\sl International Journal of Computer Mathematics}\hfill  2017--Present\\
+	{\sl Mathematical Reviews}\hfill  2017--Present\\
+	{\sl Linear Algebra and its Applications}\hfill  2016--Present\\
+	{\sl Electronic Journal of Linear Algebra}\hfill  2014--Present\\
+	{\sl Journal of Linear and Multilinear Algebra}\hfill  2012--Present
+
+\item \textbf{Conference Co-organizer} \\
+	{\small $\bullet$ AMS Special Session on Graphs and Matrices - JMM17 \hfill  2017\\
+		\phantom{----} {\small \sl Atlanta, GA, USA - Co-organizers: Bryan Shader and Sudipta Mallik}}\\
+	{\small $\bullet$ Special Session on Emerging Topics in Graphs and Matrices - JMM18 \hfill  2018\\
+		\phantom{----} {\small \sl San Diego, CA, USA - Co-organizers: Bryan Shader and Sudipta Mallik}}
+		
+\item \textbf{Diversity \& Equity Committee} at University of Calgary\\
+	\phantom{----}  {\small \sl Faculty of Science Postdoctoral Representative}\hfill  2016--Present
+
+\item \textbf{Safety Improvement Training Committee} at University of Calgary \\
+	\phantom{----}  {\small \sl Faculty of Science Postdoctoral Representative}\hfill  2016--Present\\
+	\phantom{----}  {\small \sl Mathematics and Statistics Postdoctoral Representative}\hfill  2015--Present
+
+\item \textbf{Junior Math Contest Committee} \\
+	\phantom{----}  {\small \sl Contest designing team: University of Calgary, Canada}\hfill  2016--17\\
+	\phantom{----}  {\small \sl Grading team: Western Illinois University, USA}\hfill  2015
+
+\item \textbf{Mathematics Graduate Students Representative} \hfill 2011--12 \\
+	\phantom{----} {\small \sl University of Wyoming, USA}
+
+\item \textbf{Iranian Students Representative} \hfill 2010--11 \\
+	\phantom{----} {\small \sl University of Wyoming, USA}
+
+\item \textbf{Executive Member of the Management Council} \hfill 2007--08\\
+	\phantom{----} {\small \sl Students Scientific Association of Mathematics and \\Computer Science, Amirkabir University of Technology, Iran}
+ 
+\end{description}
+ 
+ 
+ 
+\section{\sc{Grants}} 
+\begin{description}
+	\item \textbf{PIMS Post-Doctoral fellowship grant} \hfill 2016 \\
+{\small PIMS Alberta, University of Calgary, Canada} \hfill Funded
+	\item \textbf{Additional Collaboration Grant} for \textbf{M}athematics \textbf{R}esearch \textbf{C}ommunities\hfill 2014 \\ Algebraic and Geometric Methods in Applied Discrete Mathematics \hfill Funded \\
+{\small American Mathematical Society, USA} 
+	\item \textbf{Post-Doctoral fellowship grant} \hfill 2014 \\
+{\small Funda\c{c}\~{a}o para a Ci\^{o}ncia e a Tecnologia (FCT), Portugal} \hfill Not funded
+\end{description}
+%----------------------------------------------------------------------------------------
+
+
+ 
+ 
+ 
+ 
+\section{\sc{Computer Skills}}
+\begin{description}
+\item Math: \textbf{Sage}, \textbf{Octave/Matlab}, MAGMA, CoCoA, Maple, Mathematica
+\item Programming: \textbf{Python}, and data analysis (SciKit-Learn, Pandas, etc.), Machine Learning
+	\begin{itemize}
+		\item Machine Learning certificate: \href{https://www.coursera.org/learn/machine-learning}{Coursera}, Stanford University
+		\item \href{https://courses.cognitiveclass.ai/certificates/e97138f56af040f3b097ff439dd2c730}{Python for Data Science}, \href{https://cognitiveclass.ai/courses/python-for-data-science/}{Cognitive Class}, an IBM initiative
+	\end{itemize}
+\item Online teaching and management: Microsoft Lync, Elluminate Blackboard, \\Desire2Learn (D2L), Webwork, Lyryx, ALEKS, MyLab
+\item Other: HTML; \LaTeX , Photoshop
+\end{description}
+%----------------------------------------------------------------------------------------
+
+ 
+
+% 
+\section{\sc{Summer Schools and Workshops}} 
+	\Fields{\What\When\Where\Address}
+	\Merge{data/summerschools.forlatex}{%
+		\begin{description}
+			\item %\begin{minipage}[t]{.8\textwidth}
+			\textbf{\What}  \hfill \When\\
+			{\small \sl{ \Where, \Address}}
+			%\end{minipage}
+		\end{description}
+	}
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEERING
+%----------------------------------------------------------------------------------------
+\section{\sc{Volunteering}} 
+
+\begin{description}
+	\item \textbf{University of Calgary Open House} \hfill October 2016\\
+		{\small Postdoctoral Representative for Mathematics and Statistics Department}
+	
+	\item \textbf{Banff International Film Festival} \hfill November 2015\\
+		{\small Green Team and Organizing Team}
+\end{description}
+
+%----------------------------------------------------------------------------------------
+
+ 
+ 
+\newpage
+\section{\sc{References Available to Contact}} 
+
+\Fields{\Who\Link\Position\Where\Email\Phone\Relation\Photo\Comments}
+
+\Merge{data/references.forlatex}{%
+
+\begin{description}
+	\item 
+		\begin{minipage}{.2\textwidth}
+		\includegraphics[width=2.5cm]{\Photo}
+		\end{minipage} \hspace{10pt} \begin{minipage}{.8\textwidth}
+		\flushleft
+		\begin{small}
+		\href{\Link}{\textbf{\large Dr.~\Who}}\\
+		\Position\\
+		\Where\\
+		\textbf{Email:} \url{\Email}\\
+		\textbf{Phone:} \Phone\\
+		\textbf{Relation:} \Relation\\
+		\textbf{\Comments}
+		\end{small}
+		\end{minipage} 
+\end{description}
+}
+ 
+ 
+ 
+ 
+
+%\section{\sc Employment}
+%
+%{\bf Department of Mathematics and Statistics}, PIMS Post-Doctoral Fellowship Award for the 2015- 2016 year, University of Calgary, Canada,  from August 2016.
+%
+%{\bf Department of Mathematics and Systems Analysis}, Postdoctoral researcher position at the Algebra, Number Theory, and Applications research group, Aalto University School of Science, Finland, March 2015 to June 2016.
+%
+%{\bf National Center for Theoretical Sciences (NCTS)}, Research Assistant at Division of Mathematics, National Tsing Hua University, Taiwan R.O.C, July 2014 to December 2014.
+%
+%{\bf The university of University of Tor Vergata}, Teaching assistant at the university of Tor Vergata, Rome, Italy, March 2014 to July 2014.
+%
+%{\bf Ho Chi Minh University of Economics and Finances}, Lecturer in Mathematics, September 2010 to January 2012.
+%
+%{\bf Ho Chi Minh University of Economics and Finances}, Teaching assistant in Mathematics, Jun 2019 to August 2010.
+%
+%
+%
+%
+%
+%\section{\sc Education}
+%{\bf University of Tor Vergata },
+%Ph.D. in  Mathematics, from February 2012 to March 2015.\\
+%Dissertation: \textit{On reduced Arakelov divisors of a number field}.\\
+%Supervisor: {\bf Ren\'{e} Schoof}.
+%
+%{\bf University of Leiden}, visistor at Mathematisch Institut, Leiden Universiteit, the Netherlands from September 2013 to March 2014.
+%
+%{\bf Ho Chi Minh University of Pedagogy},
+%Master in  Mathematics, June 2010.\\
+%Thesis: \textit{On Laurent p-adic series}.\\
+%Supervisor: {\bf My Vinh Quang}.
+%
+%{\bf Ho Chi Minh University of Pedagogy},
+%B.S. in  Mathematics, July 2007.
+%
+%
+%
+%
+%
+%
+%
+%\section{\sc Publications}
+%
+% 
+% \textit{A generalization of reduced Arakelov divisors of a number field}, Journal of Number Theory 167 (2016) 104--117.\\
+% \url{http://www.sciencedirect.com/science/article/pii/S0022314X16300531}
+% 
+% 
+% \textit{On reduced Arakelov divisors of real quadratic fields}, Acta Arith. 3483 (2016), 297--315.   \\
+% \url{http://arxiv.org/abs/1412.5043}\\
+% \url{https://www.impan.pl/shop/onepagecheckout/}
+% 
+%
+%\textit{The size function of quadratic extensions of complex quadratic fields}, Journal de Th\'eorie des Nombres de Bordeaux, to appear.\\
+%\url{http://arxiv.org/abs/1504.01045}
+%
+%
+%\textit{Computing dimensions of spaces of Arakelov divisors of number fields},  Int. J. Number Theory,\\
+% DOI: \url{http://dx.doi.org/10.1142/S1793042117500270}\\
+%\url{http://arxiv.org/abs/1506.04540}
+%
+%\textit{Well-Rounded Lattices for Reliability and Security in Rayleigh Fading SISO Channels}, with O. W. Gnilke,  A. Karrila and C. Hollanti, to appear in IEEE Information Theory Workshop (ITW), Cambridge, 2016.\\
+%\url{https://arxiv.org/abs/1605.00419}
+%
+%
+%\textit{The size function for cyclic cubic fields}, submitted.\\
+%\url{https://arxiv.org/abs/1609.02858}
+%
+%\textit{Well-Rounded Lattices for Coset Coding in MIMO Wiretap Channels}, with Oliver W. Gnilke, Amaro Barreal, Alex Karrila, David A. Karpuk and Camilla Hollanti, in preparation.\\
+%\url{https://arxiv.org/abs/1609.07666}
+%
+%
+%
+%
+%
+%
+%
+%\section{\sc Invited Talks}
+%\emph{On reduced Arakelov divisors of a number fields}, Oberwolfach Workshop ``Explicit Methods in Number Theory", The Mathematisches Forschungsinstitut Oberwolfach, Germany, July 5-11, 2015.
+%
+%\textit{The size function of a number field}, Finnish Number theory days, Aalto University, Finland, May 28-29, 2015.
+%
+%\emph{Reduced Arakelov divisors and its applications}, Midwest Number Theory Conference for Graduate Students and Recent PhDs X, June 3 - 4, 2014, University of Illinois at Urbama-Champaign,  Champaign, United State.
+%
+%\emph{Reduced Arakelov divisors of a number field}, Young Researcher conference, university of Seville, Spain, 16th to 20th September, 2013.
+%
+%\emph{Computing Arakelov class groups}, Workshop in European University of Rome, Rome, Italy, 6th June, 2013.
+%
+%
+%
+%
+%
+%\section{\sc Other Talks}
+%\textit{On well-rounded lattices and its applications},  Mathematical Conference: ``Summer Meeting 2015", Faculty of Math and Computer Science, Ho Chi Minh City University of Science, Vietnam, August 8-9, 2015.
+%
+%
+%
+%\textit{On reduced Arakelov divisors of a number field}, NCTS seminar, Fall 2014, National Center for Theoretical Sciences Third General Building, National Tsing Hua University, Hsinchu, Taiwan, September, 2014.
+%
+%\emph{Reflex type and the type norm}, Seminar on Complex Multiplication, Fall Semester of 2013, University of Leiden, Nethelands.
+%
+%\emph{Chebotarev density theorem}, Workshop in Roma 3 University in Rome, Italy.
+%
+%
+%
+%
+%
+%
+%
+%\section{\sc Teaching Experience}
+%
+%\begin{tabular}{@{}p{0.5in}p{0.3in}p{4in}}
+%Summer & 2016 & Lattices and Number Theory, CIMPA Summer School 2016.\\
+%Fall & 2015 & Calculus, Department of Mathematics and Systems Analysis.\\
+%Summer & 2015 & Lattices and Applications in cryptography, SEAMS Summer School 2015.\\
+%Spring & 2014 & Linear Algebra and Geometry, University of Tor Vergata.\\
+%2009 & 2012 & Linear Algebra, Analysis, Probability and Statistics,  University of Economic and Finance.
+%\end{tabular}
+%
+%
+%
+%
+%
+%\section{\sc Honors and Awards}
+%
+%\begin{tabular}{@{}p{0.8in}p{4in}}
+%2015 & PIMS Post-Doctoral Fellowship Award \\
+%& for the 2015- 2016 year.\\
+%2011--2014 & PhD Fellowship\\
+%           &  University of Tor Vergata  \\
+%2007--2010 & First rank in master program in Algebra and Number theory  \\
+%			&Ho Chi Minh University of Pedagogy  \\
+%2003--2007    & University Monthly Scholarship for Excellent Students  \\
+%           & Ho Chi Minh University of Pedagogy\\
+%2006 &  Prize in Math Competition\\
+%        & DakLak Province, Vietnam.\\
+%2007 &  Prize in Math Competition\\
+%         & DakLak Province, Vietnam.
+%\end{tabular}
+%
+%
+%
+%
+%\section{\sc Service}
+%\begin{tabular}{@{}p{0.8in}p{4in}}
+%
+%11-12/2016 & Local co-organizer of SEAMS School on Cryptography: Foundations and New Directions, Vietnam Institute for Advanced Study in Mathematics (VIASM), Hanoi, Vietnam.\\
+%
+%07--08/2016 & Local co-organizer of CIMPA summer school in Lattices and Applications, Saigon University, Vietnam.\\
+%
+%08/2015 & Local co-organizer of SEAMS summer school in Number Theory and Applications, Ho Chi Minh University of Science, Vietnam.\\
+%\end{tabular}
+%
+%
+%
+%\section{\sc Languages}
+%
+%\begin{tabular}{@{}p{0.8in}p{6in}}
+%
+%Vietnamese& Mother tongue\\
+%English & Fluent\\
+%Italian & Basic\\
+%\end{tabular}
+%
+%
+%
+%\section{\sc References}
+%
+%{\bf Ren\'e Schoof},  Univeristy of Tor Vergata, \texttt{schoof.rene@gmail.com}
+%
+%%{\bf Hendrik W. Lenstra}, Leiden Universiteit, \texttt{hwl@math.leidenuniv.nl}
+%
+%{\bf Wen-Ching Winnie Li}, The Pennsylvania State University, \texttt{wli@math.psu.edu}
+%
+%{\bf Francesco Pappalardi}, University of Rome Tre, \texttt{pappa@mat.uniroma3.it}
+%
+%%{\bf My Vinh Quang}, Ho Chi Minh University of Pedagogy, \texttt{quangmv@hcmup.edu.vn}
+%
+%{\bf Pareschi Giuseppe},  Univeristy of Tor Vergata, \texttt{pareschi@axp.mat.uniroma2.it }
+%
+%
+%{\bf Camilla Hollanti},  Aalto University school of Science, \texttt{camilla.hollanti@aalto.fi}
+
+
+\end{resume}
+\end{document}

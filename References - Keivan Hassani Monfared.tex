@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Sectioned Curriculum Vitae
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{res} % Use the res.cls style
+
+\usepackage{xcolor}
+\definecolor{dark-red}{rgb}{0.4,0.15,0.15}
+\definecolor{dark-blue}{rgb}{0.15,0.15,0.4}
+\definecolor{medium-blue}{rgb}{0,0,0.5}
+
+\usepackage{graphicx}
+
+\usepackage[top=1cm, bottom=1cm]{geometry}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks, linkcolor={dark-red},
+    citecolor={dark-blue}, urlcolor={medium-blue}
+}
+
+\usepackage{textmerg} %reads a text files and embeds it in
+\usepackage[none]{hyphenat} %no hyphenation
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\newsectionwidth{0pt} % Stops section indenting
+\linespread{.95} % space between lines
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND ADDRESS(ES) SECTION
+%----------------------------------------------------------------------------------------
+
+\name{\sc \Large Keivan Hassani Monfared - References \\} % Your name at the top
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+%----------------------------------------------------------------------------------------
+%	REFERENCES WITH PICTURES
+%----------------------------------------------------------------------------------------
+\vspace{.1cm}
+
+
+\Fields{\Who\Link\Position\Where\Email\Phone\Relation\Photo\Comments}
+
+\Merge{data/references.forlatex}{%
+
+\begin{description}
+	\item 
+		\begin{minipage}{.2\textwidth}
+		\includegraphics[width=2.3cm]{\Photo}
+		\end{minipage}\begin{minipage}{.8\textwidth}
+		\href{\Link}{\textbf{\large Dr.~\Who}}\\
+		\Position, \Where\\
+		\textbf{Email:} \url{\Email}\\
+		\textbf{Phone:} \Phone\\
+		\textbf{Relation:} \Relation\\
+		\textbf{\Comments}
+		\end{minipage}
+\end{description}
+}
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}
